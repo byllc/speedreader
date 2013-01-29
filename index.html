@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <script src='jquery.js' language='javascript'></script>
+    <script src='speedreader.jquery.js' language='javascript'></script>
+  </head>
+  <body>
+    <div id='speedreadthis'>
+      Now this is a story, of about how, my life got flipped turned upside down, and I'd like to take a minute. Just sit right there. I'll tell you how I became the prince
+      of a town called Bel Air. In West Philadelphia. Born and Raised. On the playground is where I spent most of my days. Chillin out maxin relaxin all cool and then 
+      shootin' some bball outside of school. When a couple of guys who were up to no good. Started making trouble in my neighborhood. I got in one little fight. And my mom got 
+      scared. She said "You're moving with your auntie and uncle from Bel Air."  
+    </div>
+    <div id='speedreadhere' style='width:110px;height:110px;padding:50px;border:2px solid;'>
+      
+    </div>
+    <div>
+      Words Per Minute: <input id='words_per_minute' size='4'/>
+      <br/>Words Per Panel:<input id="words_per_panel" size='4'>
+      <br/><input type='button' onclick="readit()" value='Read It'>
+    </div>
+    <script language='javascript'>
+      function readit(){
+        var options = { targetId: '#speedreadhere', wordsPerMinute:$('#words_per_minute').val(), wordsPerPanel:$('#wordsPerPanel').val() }
+        $('#speedreadthis').speedReadable(options)
+        $('#speedreadthis').click()      
+      }
+    </script>
+    
+  </body>
+</html>
