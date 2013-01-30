@@ -12,6 +12,8 @@
       targetId : container      //where to put the speedreading effect
   })
 
+```
+
 #TODO:
 
      Add Jquery UI Dialog and ability to use effects 
