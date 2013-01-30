@@ -2,6 +2,8 @@
 
 ## Usage: 
 
+```javascript
+
   $('target_element').speedReadable({
       wordsPerPanel :   2      , //how many words will display in each frame
       wordsPerMinute :  100    , //how many words will display in a minute
